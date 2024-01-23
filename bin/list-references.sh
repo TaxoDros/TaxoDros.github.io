@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# Selects references from DROS3.TEXT and DROS5.TEXT records
+# Lists references from DROS3.TEXT and DROS5.TEXT records
 #
 # example usage:
-#   cat DROS3.TEXT | ./select-references.sh | head 
+#   cat DROS3.TEXT | ./list-references.sh | head 
 #
 # example produces the first 10 selected references, in order of appearance:
 #
