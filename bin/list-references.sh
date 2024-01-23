@@ -3,25 +3,23 @@
 # Lists references from DROS3.TEXT and DROS5.TEXT records
 #
 # example usage:
-#   cat DROS3.TEXT | ./list-references.sh | head 
+#   cat DROS5.TEXT | bin/list-references.sh | head 
 #
 # example produces the first 10 selected references, in order of appearance:
-#
-#   abd el-halim et al., 2005
-#   abdullah et al., 2009
-#   aboim, 1945
-#   aboim et al., 1949
-#   abou, 1978
-#   abou, 1979
-#   abou et al., 1983
-#   aboul-nasr, 1953
-#   aboul-nasr, 1954a
-#   aboul-nasr, 1954b
-#
+#i
+#/
+#?
+# Abd El-Halim et al., 2005M.pdf
+# Abdullah et al., 2009.pdf
+# Aboim, 1945.pdf
+# Aboim et al., 1949.pdf
+# Abou, 1978.pdf
+# Abou, 1979.pdf
+# Abou et al., 1983.pdf
+# Aboul-Nasr, 1953.pdf
 
 tr '\r' '\n'\
- | grep --no-group-separator --after 1 "^.TEXT;"\
- | grep -v "^.TEXT;"\
+ | grep -E "^[.]P.*"\
+ | sed 's/[.]P[ ]//g'\
  | sort\
  | uniq
-
