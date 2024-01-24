@@ -7,7 +7,7 @@ https://orcid.org/0000-0002-8402-176X
 
 ## Citation
 
-Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: http://www.taxodros.unih.ch (accessed January 2024). hash://sha256/0656a11049593ab4d0007a8ee5869a56ae71ca83ab688b24dc3df9bc618e22b2 hash://md5/96b75e80e36b08ead910a1a0f585e750
+Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: http://www.taxodros.unih.ch (accessed January 2024). hash://sha256/0656a11049593ab4d0007a8ee5869a56ae71ca83ab688b24dc3df9bc618e22b2 hash://md5/49c68b71c6b2526409fcc84c4637a869
 
 :warning: this is a work in progress 
 
