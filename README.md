@@ -72,7 +72,7 @@ Diese Text-File enthält die beschreibenden Fakten je Quelle. Jedes Segment hat 
  
 This text-file incldues the descriptors (keywords) for each source. Each segment has two tags: .TEXT: and .DESC;. The tag .TEXT; includes first the source-identification and may be followed by collecting localities (=e=…). The tag .DESC; is followed by “short form” of the taxon (always in first place) and the descriptors (key workds); the keywords are explaind in KEYWORDS.TEXT. With the exception of the tags, all the reminder are in lower case.
 
-Beispiel:
+Beispiel (Example):
 
 ```
 .TEXT;
@@ -126,7 +126,7 @@ This text-file includes the bibliographic reference (details) for each source. E
  * The bibliographic source identification [PDF file name] in DROS3.TEXT and DROS5.TEXT are an exact match.
 
 ```
-[.A author
+.A author
 .J publication year
 .S title
 .Z journal name [unfortunately not parsed into journal, volume, issue, last page, first page]
@@ -226,7 +226,9 @@ The information below is intended for machines to increase the machine readabili
 
 ```preston head``` produced the provenance anchor of this version:
 
-```hash://sha256/0656a11049593ab4d0007a8ee5869a56ae71ca83ab688b24dc3df9bc618e22b2```
+```
+hash://sha256/0656a11049593ab4d0007a8ee5869a56ae71ca83ab688b24dc3df9bc618e22b2
+```
 
 ```
 preston\
