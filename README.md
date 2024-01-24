@@ -13,11 +13,6 @@ Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. 
 
 This repository contains the TaxoDros source data of the provided by Gerhard Bächli via Donat Agosti in January 2024.
 
-## Introduction 
-
-Der Ordner enthält 10 Files. Mit Ausnahme von SYST.TEXT sind alles Text-Files mit der max. Länge 72; der Font ist fix-length, damit der Inhalt tabellarisch aussehen kann. Zu den einzelnen Files sind folgende Informationen wichtig:
-
-This folder includes 10 files. With the exception of SYST.TEXT all the Text-files are size limited (72 Chars); the font is fix-length so that the content looks (pseudo)tabularic [he uses something like Courier which makes it easier for him to look at the data in a text editor]. The following information is important to understand the individual files.
 
 ## Index Files 
 
