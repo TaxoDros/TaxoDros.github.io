@@ -47,8 +47,8 @@ track_index() {
 
 package() {
   local hashtype=${1}
-  track_index ${hashtype}
-  #track_pdfs ${hashtype}
+  #track_index ${hashtype}
+  track_pdfs ${hashtype}
 }
 
 package ${1}
