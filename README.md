@@ -18,18 +18,18 @@ This repository contains the TaxoDros source data of the provided by Gerhard Bä
 
  filename | description (click for details) | signature 
  --- | --- | ---
- [ALLORTE.TEXT](ALLORTE.TEXT) | [location information](#ALLORTE.TEXT) | hash://md5/77e26a0a38a282bb551a90e49c09693c
- [ASHBURN.TEXT](ASHBURN.TEXT) | [journal names](#ASHBURN.TEXT) | hash://md5/dfb792282c3df43a4a4d3075b126087f
- [DROS3.TEXT](DROS3.TEXT) | [reference descriptors](#DROS3.TEXT) | hash://md5/b7c2dc6accc3f41fa7eb4b37784d0dab
- [DROS5.TEXT](DROS5.TEXT) | [reference details](#DROS5.TEXT) | hash://md5/42be783197504a12172920a7edc7cbfd
- [KEYWORDS.TEXT](KEYWORDS.TEXT) | [descriptors and country names](#KEYWORDS.TEXT) | hash://md5/21884e43a0cc0728badd1b259e2f0191
+ [ALLORTE.TEXT](ALLORTE.TEXT) | [location information](#allortetext) | hash://md5/77e26a0a38a282bb551a90e49c09693c
+ [ASHBURN.TEXT](ASHBURN.TEXT) | [journal names](#ashburntext) | hash://md5/dfb792282c3df43a4a4d3075b126087f
+ [DROS3.TEXT](DROS3.TEXT) | [reference descriptors](#dros3text) | hash://md5/b7c2dc6accc3f41fa7eb4b37784d0dab
+ [DROS5.TEXT](DROS5.TEXT) | [reference details](#dros5text) | hash://md5/42be783197504a12172920a7edc7cbfd
+ [KEYWORDS.TEXT](KEYWORDS.TEXT) | [descriptors and country names](#keywordstext) | hash://md5/21884e43a0cc0728badd1b259e2f0191
  [README.md](README.md) | this file |
- [SPECIES-LIST_GE_SG](SPECIES-LIST_GE_SG) | [all Drosophilid-epithets (species, infra-specific names, such as "melanogaster")](#SPECIES-LIST_GE_SG), including the respective genus and  subgenus name | hash://md5/21884e43a0cc0728badd1b259e2f0191
- [SPECIES-LIST_GR_SR](SPECIES-LIST_GR_SR) | [(species-)groups and subgroups](#SPECIES-LIST_GR_SR) | hash://md5/0a9ebec3f9e7232de32984968323b0c2
- [SPECIES-LIST_GR_SR_SC](SPECIES-LIST_GR_SR_SC) |  [(species-)group, subgroup and species-complex](#SPECIES-LIST_GR_SR_SC) | hash://md5/f0f08d3680b7c2aedede94af3ae17b52
- [SYST.QE.TEXT](SYST.QE.TEXT) |  [copy of the SYST.TEXT as a mere text-file without header](#SYST.QE.TEXT) | hash://md5/f0f08d3680b7c2aedede94af3ae17b52
- [SYST.TEXT](SYST.TEXT) |  [all systematic relationships, including synonymy](#SYST.TEXT) | hash://md5/0ce19aa18040c8ea36b1a4e9ff29e376
- [TAXA_LIST](TAXA_LIST) | [all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference](#TAXA_LIST)  | hash://md5/0ce19aa18040c8ea36b1a4e9ff29e376
+ [SPECIES-LIST_GE_SG](SPECIES-LIST_GE_SG) | [all Drosophilid-epithets (species, infra-specific names, such as "melanogaster")](#specieslistgesg), including the respective genus and  subgenus name | hash://md5/21884e43a0cc0728badd1b259e2f0191
+ [SPECIES-LIST_GR_SR](SPECIES-LIST_GR_SR) | [(species-)groups and subgroups](#specieslistgrsr) | hash://md5/0a9ebec3f9e7232de32984968323b0c2
+ [SPECIES-LIST_GR_SR_SC](SPECIES-LIST_GR_SR_SC) |  [(species-)group, subgroup and species-complex](#specieslistgrsrsc) | hash://md5/f0f08d3680b7c2aedede94af3ae17b52
+ [SYST.QE.TEXT](SYST.QE.TEXT) |  [copy of the SYST.TEXT as a mere text-file without header](#systqetext) | hash://md5/f0f08d3680b7c2aedede94af3ae17b52
+ [SYST.TEXT](SYST.TEXT) |  [all systematic relationships, including synonymy](#systtext) | hash://md5/0ce19aa18040c8ea36b1a4e9ff29e376
+ [TAXA_LIST](TAXA_LIST) | all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference  | hash://md5/0ce19aa18040c8ea36b1a4e9ff29e376
 
 
 ## PDF Files
