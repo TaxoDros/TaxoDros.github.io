@@ -116,14 +116,14 @@ Additional tags („short forms“) can appear in each segment, whereby they hav
  
 ### DROS5.TEXT
 Dieses Text-File enthält die Referenz-Fakten je Quelle. Jedes Segment enthält zuerst die Quelle-Identifikation und folgende tags: .TEXT;, .A , .J, .S, .Z, .K  und .P  in genau dieser Reihenfolge. Die tags .A und .S können Fortsetzungszeilen haben, ohne neue tags. Folgendes ist zu beachten:
-Es gibt nur ein Segment pro Quelle.
-Ausser der Quelle-Identifikation und dem pdf-Link werden normale Gross- und Kleinbuchstaben verwendet.
-Die Quelle-Identifikation in DROS3.TEXT und DROS5.TEXT sind ein-eindeutig.
-This text-file includes the bibliographic reference (details) for each source. Each element includes first the source identifier (pdf files name) followed by the tags “.TEXT;, .A , .J, .S, .Z, .K  und .P “ in the exact order. The tags .A and .S may have consecutive lines without new tags. The following has to be considered:
+ * Es gibt nur ein Segment pro Quelle.
+ * Ausser der Quelle-Identifikation und dem pdf-Link werden normale Gross- und Kleinbuchstaben verwendet.
+ * Die Quelle-Identifikation in DROS3.TEXT und DROS5.TEXT sind ein-eindeutig.
 
-There is only one record per reference.
-With the exceptions of the bibliographic reference identification and PDF file name, the usual capitalization (lowe/upper case) is used.
-The bibliographic source identification [PDF file name] in DROS3.TEXT and DROS5.TEXT are an exact match.
+This text-file includes the bibliographic reference (details) for each source. Each element includes first the source identifier (pdf files name) followed by the tags “.TEXT;, .A , .J, .S, .Z, .K  und .P “ in the exact order. The tags .A and .S may have consecutive lines without new tags. The following has to be considered:
+ * There is only one record per reference.
+ * With the exceptions of the bibliographic reference identification and PDF file name, the usual capitalization (lowe/upper case) is used.
+ * The bibliographic source identification [PDF file name] in DROS3.TEXT and DROS5.TEXT are an exact match.
 
 ```
 [.A author
