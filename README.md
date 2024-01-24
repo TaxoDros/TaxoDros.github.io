@@ -1,4 +1,4 @@
-# TaxoDros - The database on Taxonomy of Drosophilidae
+# TaxoDros - The Database on Taxonomy of Drosophilidae
 
 Compiled by:
 Gerhard Bächli 
