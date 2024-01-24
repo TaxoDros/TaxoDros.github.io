@@ -36,16 +36,14 @@ This repository contains the TaxoDros source data of the provided by Gerhard Bä
 
 TaxoDros keeps a library of associated pdfs. See [pdf](pdf/) for more information.
 
-Introduction
-
-Der Ordner enthält 10 Files. Mit Ausnahme von SYST.TEXT sind alles Text-Files mit der max. Länge 72; der Font ist fix-length, damit der Inhalt tabellarisch aussehen kann. Zu den einzelnen Files sind folgende Informationen wichtig:
-This folder includes 10 files. With the exception of SYST.TEXT all the Text-files are size limited (72 Chars); the font is fix-length so that the content looks (pseudo)tabllaric [he uses something like Courier which makes it easier for him to look at the data in a text editor]. The following information is important to understand the individual files.
- 
-
 ## Index File Details
 
 Details based on German description provided by Bächli in Juni 2017 with English translations provided by Donat Agosti. 
 
+Der Ordner enthält 10 Files. Mit Ausnahme von SYST.TEXT sind alles Text-Files mit der max. Länge 72; der Font ist fix-length, damit der Inhalt tabellarisch aussehen kann. Zu den einzelnen Files sind folgende Informationen wichtig:
+
+This folder includes 10 files. With the exception of SYST.TEXT all the Text-files are size limited (72 Chars); the font is fix-length so that the content looks (pseudo)tabllaric [he uses something like Courier which makes it easier for him to look at the data in a text editor]. The following information is important to understand the individual files.
+ 
 ### History 
 Version 20240112: Added DOI to .K in DROS5.TEXT and SYST.QE.TEXT
 
