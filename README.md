@@ -259,4 +259,9 @@ preston\
  --algo md5
 ```
 
+produced:
 
+```
+<hash://md5/d68c923002c43271cee07ba172c67b0b> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/1037a9c831005710dc9bf14ee9a2e053> .
+<urn:uuid:0659a54f-b713-4f86-a917-5be166a14110> <http://purl.org/pav/hasVersion> <hash://md5/1037a9c831005710dc9bf14ee9a2e053> .
+```
