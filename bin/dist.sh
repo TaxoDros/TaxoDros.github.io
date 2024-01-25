@@ -11,7 +11,7 @@ mkdir -p "${dist}"
 copy-content-based() {
   find data/ -type f\
    | awk '{print $1 "\t" $1}'\
-   | sed -E 's/([^\t]+)([a-f0-9]{32,}+)$/\2/g'\
+   | sed -E 's/([^\t]+)([a-f0-9]{32,64})$/\2/g'\
    | parallel --colsep '\t' cp {1} ${dist}/{2} 
 }
 
