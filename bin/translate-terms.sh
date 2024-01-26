@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# takes DROS3.TEXT and DROS5.TEXT 
-# uses ALLORTE.TEXT, KEYWORDS.TEXT, TAXA_LIST 
+# takes most recent versions of DROS3.TEXT and DROS5.TEXT 
+# using most recent versions of ALLORTE.TEXT, KEYWORDS.TEXT, TAXA_LIST 
 # to insert lsids into json representations of DROS3.TEXT DROS5.TEXT
 
 set -xe
@@ -16,13 +16,14 @@ taxodros_index_version() {
   preston history\
    --anchor ${TAXODROS_VERSION}\
    ${PRESTON_OPTS}\
-   | tail -n+2\
-   | head -n1\
    | preston cat
 }
 
 stream_records() {
   taxodros_index_version\
+   | grep hasVersion\
+   | grep -E "DROS[35][.]TEXT"\
+   | head -n2\
    | preston taxodros-stream ${PRESTON_OPTS}
 }
 
@@ -30,18 +31,21 @@ build_translation_table() {
   taxodros_index_version\
    | grep hasVersion\
    | grep ALLORTE.TEXT\
+   | head -n1\
    | preston cat ${PRESTON_OPTS}\
    | "${BIN_DIR}/lsid4ort.sh"
 
   taxodros_index_version\
    | grep hasVersion\
    | grep KEYWORDS.TEXT\
+   | head -n1\
    | preston cat ${PRESTON_OPTS}\
    | "${BIN_DIR}/lsid4keyword.sh"
  
   taxodros_index_version\
    | grep hasVersion\
    | grep TAXA_LIST\
+   | head -n1\
    | preston cat ${PRESTON_OPTS}\
    | "${BIN_DIR}/lsid4taxon.sh"
 }
