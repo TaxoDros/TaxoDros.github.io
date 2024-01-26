@@ -48,6 +48,14 @@ build_translation_table() {
    | head -n1\
    | preston cat ${PRESTON_OPTS}\
    | "${BIN_DIR}/lsid4taxon.sh"
+  
+  taxodros_index_version\
+   | grep hasVersion\
+   | grep ASHBURN\
+   | head -n1\
+   | preston cat ${PRESTON_OPTS}\
+   | "${BIN_DIR}/expandjournal.sh"
+  
 }
 
 >&2 echo building translation table...
