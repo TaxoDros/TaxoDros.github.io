@@ -149,18 +149,22 @@ Morphological Traits.
  
 ### KEYWORDS.TEXT
 Dieses Text-File enthält die Deskriptoren ("keywords") und die Ländernamen.
+
 This text-file includes the descriptors („keywords“) and the country names.
  
 ### SPECIES-LIST_GE_SG
 Dieses Text-File enthält alle Drosophiliden-Epithete zur raschen Ûbersicht, mit den Gattungs-und Untergattungs-Zuweisung.
+
 This text-file includes all Drosophilid-epithets [species, infra-specific names, such as „melanogaster“] for a quick overview, including the respective genus and  subgenus name.
  
 ### SPECIES-LIST_GR_SR
 Dieses Text-File gibt die Zuweisungen je Gruppe und Untergruppe
+
 This text-file provides the link to [species-]groups and subgroups
  
 ### SPECIES-LIST_GR_SR_SC
 Dieses Text-File gibt die Zuweisungen je Gruppe, Untergruppe und Art-Konplex
+
 This text-file provides the link [species-]group, subgroup and species-complex.
  
 ### SYST.TEXT
