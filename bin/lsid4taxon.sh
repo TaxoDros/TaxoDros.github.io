@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# transforms TAXA_LIST to shortname lsid mapping
+# transforms TAXA_LIST to taxon shortname lsid mapping
 #
 # usage:
-#    cat TAXA_LIST | taxa2lsid 
+#    cat TAXA_LIST | ./lsid4taxon.sh 
 #
 #
 # example input:
@@ -22,5 +22,5 @@ tr '\r' '\n'\
  '{print $1 "\t" $2 "\t" $4}'\
  | sed -E 's/[ ]+\t/\t/g'\
  | sed -E 's/[ ]+$//g'\
- | awk -F '\t' '{ print $1 "\turn:lsid:taxodros.uzh.ch:tax:" $1 }'\
+ | awk -F '\t' '{ print $1 "\turn:lsid:taxodros.uzh.ch:taxon:" $1 }'\
  | awk -F '\t' '{ { gsub(" ", "_", $2) } print $1 "\t" $2 }'
