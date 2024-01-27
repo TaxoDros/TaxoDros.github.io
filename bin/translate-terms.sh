@@ -62,9 +62,10 @@ build_translation_table() {
 build_translation_table\
  | awk -F '\t' '{ { gsub("&", "\\\\&", $2) } print $1 "\t" $2 }'\
  | awk -F '\t' '{ { gsub("\"", "\\\\\"", $2) } print "s|\"" $1 "\"|\"" $2 "\"|g" }'\
- | tee translation.sed\
  > "${TRANSLATION_TABLE}"
 >&2 echo building translation table... done.
 
 stream_records\
   | parallel --pipe --line-buffer sed -f "${TRANSLATION_TABLE}"
+
+rm "${TRANSLATION_TABLE}"
