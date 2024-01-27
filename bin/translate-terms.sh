@@ -60,7 +60,7 @@ build_translation_table() {
 
 >&2 echo building translation table...
 build_translation_table\
- | awk -F '\t' '{ print "s|\"" $1 "\"|\"" $2 "\"|g" }'\
+ | awk -F '\t' '{ { gsub("\"", "\\\\\"", $2) } print "s|\"" $1 "\"|\"" $2 "\"|g" }'\
  > "${TRANSLATION_TABLE}"
 >&2 echo building translation table... done.
 
