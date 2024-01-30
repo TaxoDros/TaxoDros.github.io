@@ -21,6 +21,5 @@
 tr '\r' '\n'\
  | grep -E "^[.]P.*"\
  | sed 's/[.]P[ ]//g'\
- | sed 's/\&/_/g'\
  | sort\
  | uniq
