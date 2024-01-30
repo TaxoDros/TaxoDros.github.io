@@ -18,7 +18,7 @@ This repository contains the TaxoDros source data for [Taxodros](https://www.ta
  [ALLORTE.TEXT](ALLORTE.TEXT) | [location information](#allortetext) | hash://md5/77e26a0a38a282bb551a90e49c09693c
  [ASHBURN.TEXT](ASHBURN.TEXT) | [journal names](#ashburntext) | hash://md5/dfb792282c3df43a4a4d3075b126087f
  [DROS3.TEXT](DROS3.TEXT) | [reference descriptors](#dros3text) | hash://md5/b7c2dc6accc3f41fa7eb4b37784d0dab
- [DROS5.TEXT](DROS5.TEXT) | [reference details](#dros5text) | hash://md5/42be783197504a12172920a7edc7cbfd
+ [DROS5.TEXT](DROS5.TEXT) | [reference details](#dros5text) | hash://md5/e83039fdbc676f9c9e915e08b0c8c2f1
  [KEYWORDS.TEXT](KEYWORDS.TEXT) | [descriptors and country names](#keywordstext) | hash://md5/21884e43a0cc0728badd1b259e2f0191
  [README.md](README.md) | this file |
  [SPECIES-LIST_GE_SG](SPECIES-LIST_GE_SG) | [all Drosophilid-epithets (species, infra-specific names, such as "melanogaster")](#species-list_ge_sg), including the respective genus and  subgenus name | hash://md5/21884e43a0cc0728badd1b259e2f0191
@@ -205,19 +205,21 @@ The information below is intended for machines to increase the machine readabili
 ```preston head``` produced the provenance anchor of this version:
 
 ```
-hash://sha256/3e41eec4c91598b8a2de96e1d1ed47d271a7560eb6ef350a17bc67cc61255302
+hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19
 ```
 
 ```
 preston\
  history\
- --anchor hash://sha256/3e41eec4c91598b8a2de96e1d1ed47d271a7560eb6ef350a17bc67cc61255302\
+ --anchor hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19
  --remote https://linker.bio,https://softwareheritage.org
 ```
 
 yields 
 
 ```
+<hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/dc11cb282d103aa4541c8b406502ab5721bfc41edb662b7b44ef91a76b60dfb8> .
+<hash://sha256/dc11cb282d103aa4541c8b406502ab5721bfc41edb662b7b44ef91a76b60dfb8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/3e41eec4c91598b8a2de96e1d1ed47d271a7560eb6ef350a17bc67cc61255302> .
 <hash://sha256/3e41eec4c91598b8a2de96e1d1ed47d271a7560eb6ef350a17bc67cc61255302> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/ee72b70df451082289193cdd8ff420495b3a24d230880613f9adddc71380fee6> .
 <urn:uuid:0659a54f-b713-4f86-a917-5be166a14110> <http://purl.org/pav/hasVersion> <hash://sha256/ee72b70df451082289193cdd8ff420495b3a24d230880613f9adddc71380fee6> .
 ```
@@ -227,7 +229,7 @@ Similarly, in md5 hash space:
 ```preston head --algo md5``` yielded:
 
 ```
-hash://md5/d68c923002c43271cee07ba172c67b0b
+hash://md5/4fa9eeed1c8cff2490483a48c718df02
 ```
 
 with
@@ -235,7 +237,7 @@ with
 ```
 preston\
  history\
- --anchor hash://md5/d68c923002c43271cee07ba172c67b0b\
+ --anchor hash://md5/4fa9eeed1c8cff2490483a48c718df02\
  --remote https://linker.bio,https://zenodo.org\
  --algo md5
 ```
@@ -243,6 +245,8 @@ preston\
 produced:
 
 ```
+<hash://md5/4fa9eeed1c8cff2490483a48c718df02> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/b8c3a1e1acdfaf8e0bb3c69d220709d8> .
+<hash://md5/b8c3a1e1acdfaf8e0bb3c69d220709d8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/d68c923002c43271cee07ba172c67b0b> .
 <hash://md5/d68c923002c43271cee07ba172c67b0b> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/1037a9c831005710dc9bf14ee9a2e053> .
 <urn:uuid:0659a54f-b713-4f86-a917-5be166a14110> <http://purl.org/pav/hasVersion> <hash://md5/1037a9c831005710dc9bf14ee9a2e053> .
 ```
