@@ -99,12 +99,11 @@ phyl	(keyword)
 ### DROS5.TEXT
 
 This text-file contains segments with the bibliographic details for each source of information. Each segment begins with the tag .TEXT; strictly followed by the following tags: .A , .J , .S , .Z or .Z., .K , .P . All tags are fix length (max. 72 chars), excepting the tags .A and .S which may have consecutive lines without new tags.
+
 The following is important:
-	- There is only one segment for each source of information.
-	- Excepting the source identification (in lowercase), all
-	tags may contain text with the usual capitalization.
-- the lines “source identification” in DROS3.TEXT and 
-DROS5.TEXT are in exact match, connecting the two files.
+ * There is only one segment for each source of information.
+ * Excepting the source identification (in lowercase), all tags may contain text with the usual capitalization.
+ * Rhe lines “source identification” in DROS3.TEXT and DROS5.TEXT are in exact match, connecting the two files.
 
 Explanation of the tags used within each segment:
 
