@@ -33,52 +33,42 @@ This repository contains the TaxoDros source data for [Taxodros](https://www.ta
 
 TaxoDros keeps a library of associated pdfs. See [pdf](pdf/) for more information.
 
-## Index File Details
-
-Details based on German description provided by Bächli in Juni 2017 with English translations provided by Donat Agosti. 
-
-Der Ordner enthält 10 Files. Mit Ausnahme von SYST.TEXT sind alles Text-Files mit der max. Länge 72; der Font ist fix-length, damit der Inhalt tabellarisch aussehen kann. Zu den einzelnen Files sind folgende Informationen wichtig:
-
-This folder includes 10 files. With the exception of SYST.TEXT all the Text-files are size limited (72 Chars); the font is fix-length so that the content looks (pseudo)tabllaric [he uses something like Courier which makes it easier for him to look at the data in a text editor]. The following information is important to understand the individual files.
- 
 ### History 
 Version 20240112: Added DOI to .K in DROS5.TEXT and SYST.QE.TEXT
 
+## Index File Details
+
+Details based on description provided by Bächli in January 2024.
+
+The TaxoDros Index includes 12 files. With the exception of SYST.TEXT all files are strict size-limited (72 Chars, some lines with continuations in DROS5.TEXT). The font used is Monaco, a fix-length font on Mac, which in a text editor makes the data looking (pseudo)tabellaric. The following information is important to understand the individual files.
+
 ### ALLORTE.TEXT
-Dieses Text-File enthält alle Fundorte, alphabetisch, mit geographischen Koordinaten (- am Ende bedeutet ziemlich genau) und die Schweizer Koordînaten. Anschliessend folgt der (abgekürzte) Ländername. die Abkürzungen sind in KEYWORDS.TEXT (erweitert) erläutert (und online erweitert gebraucht).
 
-This file includes all location in alphabetical order, with geographic coordinates („-„ at the end means rather exact) und die Swiss coordinates [This is used for Swiss Topo maps]. Followed by the abbreviated name of the country. The abbreviations are explained and expanded in KEWWORDS.TEXT, and then in Taxodros online used.
- 
+This file includes all collection sites in alphabetical order, with geographic coordinates, first geographic longitude, then geographic latitude („-„ at the end means rather exact data) und die Swiss coordinates [This is used for Swiss Topo maps], followed by the (abbreviated) name of the country. The abbreviations are explained and expanded in KEYWORDS.TEXT and used in Taxodros online.
+
+
 ### ASHBURN.TEXT
-Dieses Text-File enthält die Namen der Zeitschriften:
 
-```
-*s = benützte Abkürzung in DROS5.TEXT
-*u = formaler Name
-```
+This text-file containes the names of the journals:
+	*s = abbreviation of names used in DROS5.TEXT
+	*u = full (formal) names of journals
 
-This text-file includes the names of the journals:
-
-```
-*s = used abbreviation in DROS5.TEXT
-*u = formal (full?) names
-```  
 
 ### DROS3.TEXT
-Diese Text-File enthält die beschreibenden Fakten je Quelle. Jedes Segment hat die zwei tags .TEXT; und .DESC;. Der tag .TEXT; enthält zuerst die Quelle-Identifikation und kann gefolgt werden von allfälligen Fundorten (=e=...). Der tag .DESC; wird gefolgt von der "short form" des Taxons (immer an erster Stelle) und den Deskriptoren; die Deskriptoren werden in KEYWORDS.TEXT erläutert. Ausser den tags ist allen in Kleinschrift.
- 
-This text-file incldues the descriptors (keywords) for each source. Each segment has two tags: .TEXT: and .DESC;. The tag .TEXT; includes first the source-identification and may be followed by collecting localities (=e=…). The tag .DESC; is followed by “short form” of the taxon (always in first place) and the descriptors (key workds); the keywords are explaind in KEYWORDS.TEXT. With the exception of the tags, all the reminder are in lower case.
 
-Beispiel (Example):
+This text-file includes the descriptors (keywords) used for each source. Each segment has two tags: .TEXT; and .DESC;. The tag .TEXT; includes first the source identification and may be followed by collecting localities (each beginning with =e=…). The tag .DESC; is followed by the “short name” of the taxon (always in first place) followed by the descriptors (key words), The keywords used are explained in KEYWORDS.TEXT. With the exception of the tags, all the following lines are in lower case. Addional “short names” can follow in each segment, in case that the keywords also apply. The keyword “descr” is also used in connection with the keywords fig, egg, larv, pup. Multiple segments are used for each source, when needed.
+
+Example (copy of two segments in DROS3.TEXT:
 
 ```
-.TEXT;
-acurio et al., 2013    	Quelle-Identifikation
-=e=san jose beach   	= Fundort collection location
-.DESC;
-machalilla    	= "short form" siehe File TAXA_LIST abbreviated form, see file TAXA_LIST
-descr	= Deskriptor Key words
-fig
+.TEXT;	tag
+acurio et al., 2013	(source identification)
+=e=san jose beach	(collection site)
+.DESC;	tag
+machalilla	(“short name”)
+descr		keyword, followed by additional 
+			descriptors)
+fig		
 malex
 malin
 femex
@@ -87,7 +77,7 @@ typemat
 typeloc
 loc
 distr$
-ecuador
+Ecuador	country of collections site
 comp
 affil
 taxon
@@ -95,44 +85,44 @@ phyl
 egg
 pup
 biol
-.TEXT;
-acurio et al., 2013
-.DESC;
-atalaia-gr
-descr
-taxaincl
-affil
-taxon
-phyl
+.TEXT;	tag
+acurio et al., 2013	(source information)
+.DESC;	tag
+atalaia-gr	(“short name“)
+descr	(keyword)
+taxaincl	(keyword)
+affil	(keyword)
+taxon	(keyword)
+phyl	(keyword)
 ```
 
-In jedem Segment können weitere Taxa ("short forms") vorkommen, für die dieselben Deskriptoren gelten.
-Der Deskriptor descr wird auch für Figs und Larvenformen etc. gebraucht, welche als solche separat suchbar sind.
-
-Additional tags („short forms“) can appear in each segment, whereby they have the same keywords. The keyword “descr” is also used for Figs and larval description, etc., which are searchable independently.
- 
 ### DROS5.TEXT
-Dieses Text-File enthält die Referenz-Fakten je Quelle. Jedes Segment enthält zuerst die Quelle-Identifikation und folgende tags: .TEXT;, .A , .J, .S, .Z, .K  und .P  in genau dieser Reihenfolge. Die tags .A und .S können Fortsetzungszeilen haben, ohne neue tags. Folgendes ist zu beachten:
- * Es gibt nur ein Segment pro Quelle.
- * Ausser der Quelle-Identifikation und dem pdf-Link werden normale Gross- und Kleinbuchstaben verwendet.
- * Die Quelle-Identifikation in DROS3.TEXT und DROS5.TEXT sind ein-eindeutig.
 
-This text-file includes the bibliographic reference (details) for each source. Each element includes first the source identifier (pdf files name) followed by the tags “.TEXT;, .A , .J, .S, .Z, .K  und .P “ in the exact order. The tags .A and .S may have consecutive lines without new tags. The following has to be considered:
- * There is only one record per reference.
- * With the exceptions of the bibliographic reference identification and PDF file name, the usual capitalization (lowe/upper case) is used.
- * The bibliographic source identification [PDF file name] in DROS3.TEXT and DROS5.TEXT are an exact match.
+This text-file contains segments with the bibliographic details for each source of information. Each segment begins with the tag .TEXT; strictly followed by the following tags: .A , .J , .S , .Z or .Z., .K , .P . All tags are fix length (max. 72 chars), excepting the tags .A and .S which may have consecutive lines without new tags.
+The following is important:
+	- There is only one segment for each source of information.
+	- Excepting the source identification (in lowercase), all
+	tags may contain text with the usual capitalization.
+- the lines “source identification” in DROS3.TEXT and 
+DROS5.TEXT are in exact match, connecting the two files.
+
+Explanation of the tags used within each segment:
 
 ```
-.A author
-.J publication year
-.S title
-.Z journal name [unfortunately not parsed into journal, volume, issue, last page, first page]
-.Z. book
-.K private comments, such as digital copy available, library numbers, and new also DOIs
-.P identifier for the record
- ```
- 
-Beispiel (Example):
+.TEXT;	Segment delimiter
+.A 		source identification
+.J 		year of publication
+.S 		title
+.Z		Journal name (abbreviated), volume(issue):first 
+		page-last page
+		or
+.Z.		for Books: editor etc.
+.K 		comments: library codes, pdf quality, DOI
+.P 		name of respective pdf, if available
+```
+
+Example: (copy of segment in DROS5.TEXT)
+
 ```
 .TEXT;
 acurio et al., 2013
@@ -143,65 +133,53 @@ acurio et al., 2013
 Relationships Inferred by a Cladistic Analysis of
 Morphological Traits.
 .Z Ann. ent. Soc. Am., 106:1-11.
-.K pdf
+.K ocr++ / DOI:10.1603.AN13028
 .P Acurio et al., 2013
- ```
- 
+```
+
 ### KEYWORDS.TEXT
-Dieses Text-File enthält die Deskriptoren ("keywords") und die Ländernamen.
 
-This text-file includes the descriptors („keywords“) and the country names.
- 
-### SPECIES-LIST_GE_SG
-Dieses Text-File enthält alle Drosophiliden-Epithete zur raschen Ûbersicht, mit den Gattungs-und Untergattungs-Zuweisung.
+This text-file includes the descriptors (keywords) used in DROS3.TEXT and the (abbreviated) names of countries used in ALLORTE.TEXT and DROS5.TEXT, all used in online TAXODROS.
 
-This text-file includes all Drosophilid-epithets [species, infra-specific names, such as „melanogaster“] for a quick overview, including the respective genus and  subgenus name.
- 
-### SPECIES-LIST_GR_SR
-Dieses Text-File gibt die Zuweisungen je Gruppe und Untergruppe
+### SPECIES-List_GE_SG
 
-This text-file provides the link to [species-]groups and subgroups
- 
-### SPECIES-LIST_GR_SR_SC
-Dieses Text-File gibt die Zuweisungen je Gruppe, Untergruppe und Art-Konplex
+In this text-file, all taxon names (short names, epithets) are listed with their affiliation to genus and subgenus.
 
-This text-file provides the link [species-]group, subgroup and species-complex.
- 
+### SPECIES-List_GR_SG
+
+In this text-file, all taxon names (short names, epithets) are listed with their affiliation to genus, subgenus, specie-groups and specie-subgroups.
+
+### SPECIES-List_GR_SR_SC
+
+In this text-file, all taxon names (short names, epithets) are listed with their affiliation to genus, subgenus, species-group, species-subgroup and species-complex.
+
 ### SYST.TEXT
-Dies ist ein EXCEL-File in Text-Format. Es enthält alle systematischen Beziehungen, auch der Synonyme etc., mit tags zur Sortierung. Auch "verwandte" Familien sind berücksichtigt.
-In der ersten Kolonne ist die "short form" (tag .KF=) enhalten; sog. "Homonyme" sind durch Nummern unterschieden und ein-eindeutig identifiziert. Diese "short form" wird in DROS3.TEXT verwendet.
+
+This is a XLS-file in text/tab format. It includes all systematic relationships, including comments on synonymy and homonymy, etc., with tags for sorting. 
+Some tags:
 
 ```
-Der tag .VN= enthält die aktuell gültige Nomenklatur.
-Der tag .FU= enthält das originale Zitat des Taxons.
-Der tag .OR= enthält die originale Gattung.
-Der tag .AU= enthält die originale Quelle zur Identifikation mit DROS5.TEXT (und DROS3.TEXT).
+.KF 	“short name“, used in DROS3.TEXT. So called homonyms 
+	are separated by nummers and uniquely identified.
+	Additional tags refer the affiliation with family, 
+	subfamily, etc, where applicable.
+.VN 	the currently accepted name (taxonomy).
+.FU 	the original form of the name, with author(s), etc.,. 
+.OR 	the original generic affiliation of the name
+.AU 	the original source to link with DROS5.TEXT
 ```
-
-This is a XLS-file in text format. It includes all systematic relationships, including synonymy, etc., with tags for sorting. It includes also “related” families [other families beyond Drosophilidae]
-The first colum includes the abbreviated form (tag “.KF=”). So called homonyms are separated by nummers and uniquely identified. These abbreviated forms are used in DROS3.TEXT.
-
-```
-The tag .VN=  includes the currently accepted name (nomenclature)
-The tag .FU= the original combination of the name
-The tag .OR= the original generic name
-The tag .AU=  includes the original bibliographic reference to link with DROS5-TEXT (and DROS3.TEXT)
- ```
 
 ### SYST.QE.TEXT
-Dies ist eine Kopie von SYST.TEXT als reines Text-File, also ohne XLS-Meta-Daten, dies auf Verlangen des Rechenzentrums. Alle Tabs - entsprechend den tags in SYST.TEXT  - sind erhalten.
 
-This is a copy of the SYST.TEXT as a mere text-file without the XLS-Meta-Data (header) on request of the informatics department [hosting the taxodors DB at UNIZurich]. All tabs are retained, according to the tax in SYST.TEXT.
+This is a text-file, actually an exact copy of the file SYST.TEXT without connection with xls.
 
-### TAXA_LIST
-Dieses Text-File enthält alle Taxa (als "short form"), für Arten mit der aktuellen Gattung, und dem aktuellen Zitat.
+### TAXA-LIST
 
-This text-file includs all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference.
- 
+This text-file lists all “short names” with actual genus affiliation and author(s) combination.
+
+
 ### TAXODROS
-TAXODROS (online) kann gebraucht werden zur Suche mit Deskriptoren oder zur taxonomischen Übersicht oder zur Verbreitung oder zur verwendeten Literatur.
-
-TAXODROS (online) can be used to search with key words  or the taxonomic overview or the distribution or the respective references.
+The link [https://www.taxodros.uzh.ch](https://www.taxodros.uzh.ch) allows search with keywords, search for distribution and contains lists for taxonomic overviews.
 
 
 ## References 
