@@ -103,7 +103,7 @@ This text-file contains segments with the bibliographic details for each source 
 The following is important:
  * There is only one segment for each source of information.
  * Excepting the source identification (in lowercase), all tags may contain text with the usual capitalization.
- * Rhe lines “source identification” in DROS3.TEXT and DROS5.TEXT are in exact match, connecting the two files.
+ * The lines “source identification” in DROS3.TEXT and DROS5.TEXT are in exact match, connecting the two files.
 
 Explanation of the tags used within each segment:
 
