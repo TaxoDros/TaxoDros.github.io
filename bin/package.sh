@@ -23,15 +23,8 @@ set -xe
 track_pdfs() {
   local hashtype=${1}
 
-  find /var/cache/taxodros/pdf -type f\
-   | grep -vE "[^/]+[.](md5|sha256)$"\
-   | sed 's+^+file://+g'\
-   | sed 's+[ ]+%20+g'\
-   | sed 's+[,]+%2C+g'\
-   | sed 's+[#]+%23+g'\
-   | sort\
-   | uniq\
-   | xargs -L64 preston track --algo ${hashtype}
+   preston track --algo ${hashtype}\
+     --file <(find /var/cache/taxodros/pdf -type f | grep -vE "[^/]+[.](md5|sha256)$")
 }
 
 track_index() { 
@@ -48,7 +41,7 @@ track_index() {
 package() {
   local hashtype=${1}
   track_index ${hashtype}
-  #track_pdfs ${hashtype}
+  track_pdfs ${hashtype}
 }
 
 package ${1}
