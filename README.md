@@ -7,7 +7,7 @@ https://orcid.org/0000-0002-8402-176X
 
 ## Citation
 
-Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: http://www.taxodros.unih.ch https://www.taxodros.uzh.ch/. https://doi.org/10.5281/zenodo.10565403 hash://sha256/3e41eec4c91598b8a2de96e1d1ed47d271a7560eb6ef350a17bc67cc61255302 hash://md5/d68c923002c43271cee07ba172c67b0b
+Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.10593902 hash://md5/4fa9eeed1c8cff2490483a48c718df02 hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19 
 
 This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January 2024.
 
