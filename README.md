@@ -158,14 +158,27 @@ This is a XLS-file in text/tab format. It includes all systematic relationships,
 Some tags:
 
 ```
-.KF 	“short name“, used in DROS3.TEXT. So called homonyms 
-	are separated by nummers and uniquely identified.
-	Additional tags refer the affiliation with family, 
-	subfamily, etc, where applicable.
-.VN 	the currently accepted name (taxonomy).
-.FU 	the original form of the name, with author(s), etc.,. 
-.OR 	the original generic affiliation of the name
-.AU 	the original source to link with DROS5.TEXT
+.KF 	“short name“, used in DROS3.TEXT (e.g., atterima) 
+        So called homonyms are separated by nummers and 
+        uniquely identified (e.g., attenuata 1).
+.VN 	the currently accepted name (taxonomy). (e.g., aterrima)
+.FU 	the original form of the name, with author(s), etc.,. (e.g., atterima Patterson and Wheeler, 1949:218)
+.OR 	the original generic affiliation of the name (e.g., Drosophila)
+.AU 	the original source to link with DROS5.TEXT (e.g., patterson & wheeler, 1949)
+
+.FA 	family (e.g., Drosophilidae)
+.SF     subfamily (e.g., Drosophilinae)
+.TR     tribe (e.g., Drosophilini)
+.ST     subtribe (e.g., Drosophilina)
+.IT     infratribe (e.g., Drosophiliti)
+.GE     genus (e.g., Scaptomyza)
+.SG     subgenus (e.g., Macroscaptomyza)
+.GR     species group (e.g., mesophragmatica)
+.SR     species subgroup (e.g., mesophragmatica)
+.SC     species complex (e.g., altissima)
+.SS     subspecies (e.g., avittata)
+
+.CO      
 ```
 
 ### SYST.QE.TEXT
