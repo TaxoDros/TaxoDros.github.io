@@ -21,19 +21,11 @@ stream_records() {
 }
 
 build_translation_table() {
-  taxodros_index_version\
-   | grep hasVersion\
-   | grep ALLORTE.TEXT\
-   | head -n1\
-   | preston cat ${PRESTON_OPTS}\
-   | "${BIN_DIR}/lsid4ort.sh"
+   "${BIN_DIR}/localities.sh"\
+   | cut -f1,2
 
-  taxodros_index_version\
-   | grep hasVersion\
-   | grep KEYWORDS.TEXT\
-   | head -n1\
-   | preston cat ${PRESTON_OPTS}\
-   | "${BIN_DIR}/lsid4keyword.sh"
+   "${BIN_DIR}/keywords.sh"\
+   | cut -f1,2
  
   taxodros_index_version\
    | grep hasVersion\
