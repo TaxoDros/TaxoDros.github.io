@@ -8,7 +8,7 @@
 # 
 #
 
-$(dirname $0)/translate-terms.sh\
+$(dirname $0)/translate-terms.sh "DROS3"\
  | cat\
  <(echo -e "referenceId\ttag\tderivedFrom")\
  <(grep "taxodros-dros3"\
