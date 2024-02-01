@@ -26,4 +26,5 @@ stream_records\
  | cut -f1\
  | sed -E 's/[ ]+$//g'\
  | awk -F '\t' '{ print $1 "\turn:lsid:taxodros.uzh.ch:keyword:" $1 "\t" $2 }'\
- | awk -F '\t' '{ { gsub(" ", "_", $2) } print $1 "\t" $2 "\t" $3 }'
+ | awk -F '\t' '{ { gsub(" ", "_", $2) } print $1 "\t" $2 "\t" $3 }'\
+ | LC_COLLATE=POSIX sort

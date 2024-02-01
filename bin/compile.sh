@@ -3,25 +3,32 @@
 # compiles tabular views on taxodros files
 # 
 
+set -xe
+
 bin=$(dirname $0)
 
 dist="${bin}/../tsv"
 
 mkdir -p "${dist}"
 
+collect-and-sample() {
+  tee "${dist}/${1}.tsv"\
+  | head -n51\
+  > "${dist}/${1}-sample.tsv"
+}
 
 bin/taxonomy-table.sh\
- tee "${dist}/taxonomy.tsv"
+ | collect-and-sample "taxonomy"
 
 bin/reference-table.sh\
- tee "${dist}/references.tsv"
+ | collect-and-sample "references"
 
-bin/reference-tags-table.sh\
- tee "${dist}/reference-tags.tsv"
+bin/reference-tag-table.sh\
+ | collect-and-sample "reference-tags"
 
 bin/localities.sh\
- tee "${dist}/localities.tsv"
+ | collect-and-sample "localities"
 
 bin/keywords.sh\
- tee "${dist}/keywords.tsv 
+ | collect-and-sample "keywords"
 

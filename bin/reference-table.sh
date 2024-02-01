@@ -54,5 +54,6 @@ $(dirname $0)/translate-terms.sh "DROS5"\
  <(echo -e "${header}")\
  <(grep "taxodros-dros5"\
  | jq "${query}"\
- | jq --raw-output "[ ${values} ] | @tsv")
+ | jq --raw-output "[ ${values} ] | @tsv"\
+ | LC_COLLATE=POSIX sort)
 

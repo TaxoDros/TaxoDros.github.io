@@ -35,4 +35,5 @@ cat <(echo -e "localityCode\tlocalityId\tdecimalLongitude\tdecimalLatitude\tcoun
  | sed -E 's/-\t/\t/g'\
  | awk -F '\t' '{ print $1 "\t" "urn:lsid:taxodros.uzh.ch:locality:" $1 "\t" $2 "\t" $3 "\t" $4 }'\
  | awk -F '\t' '{ { gsub(" ", "_", $2) } print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 }'\
+ | LC_COLLATE=POSIX sort
 )

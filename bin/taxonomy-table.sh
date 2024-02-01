@@ -9,22 +9,22 @@ set -xe
 
 columns=$(cat <<__EOF__
 taxonId
-acceptedName
-accordingTo
-family
-genus
-infratribe
 originalGenus
 originalSpecificEpithet
-referenceId
+accordingTo
+family
+subfamily
+tribe
+subtribe
+infratribe
+genus
+subgenus
+acceptedName
+subspecies
 speciescomplex
 speciesgroup
 speciessubgroup
-subfamily
-subgenus
-subspecies
-subtribe
-tribe
+referenceId
 http://www.w3.org/ns/prov#wasDerivedFrom
 __EOF__
 )
@@ -53,5 +53,6 @@ $(dirname $0)/taxonomy.sh\
  <(echo -e "${header}")\
  <(grep "taxodros-syst"\
  | jq "${query}"\
- | jq --raw-output "[ ${values} ] | @tsv")
+ | jq --raw-output "[ ${values} ] | @tsv"\
+ | LC_COLLATE=POSIX sort)
 
