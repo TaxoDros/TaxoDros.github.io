@@ -21,7 +21,7 @@ taxodros_index_version() {
 stream_records() {
   taxodros_index_version\
    | grep hasVersion\
-   | grep -E "(DROS3|DROS5|SYS)[.]TEXT"\
+   | grep -E "(DROS3|DROS5)[.]TEXT"\
    | preston taxodros-stream ${PRESTON_OPTS}
 }
 
