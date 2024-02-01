@@ -178,7 +178,7 @@ Some tags:
 .SC     species complex (e.g., altissima)
 .SS     subspecies (e.g., avittata)
 
-.CO      
+.CO     any comments (status, etc.) 
 ```
 
 ### SYST.QE.TEXT
