@@ -12,7 +12,9 @@ dist="${bin}/../tsv"
 mkdir -p "${dist}"
 
 collect-and-sample() {
-  tee "${dist}/${1}.tsv"\
+  tee "${dist}/${1}.tsv"
+  
+  cat "${dist}/${1}.tsv"\
   | head -n51\
   > "${dist}/${1}-sample.tsv"
 }
