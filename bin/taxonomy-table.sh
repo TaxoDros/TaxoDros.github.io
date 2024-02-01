@@ -1,11 +1,8 @@
 #!/bin/bash
 #
-# translates dros3 json records into tabular form with columns:
+# print taxodros taxonomic records in 
+# tab-separated values format
 #
-# referenceId
-# tag 
-# derivedFrom
-# 
 #
 
 set -xe

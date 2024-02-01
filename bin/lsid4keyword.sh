@@ -3,7 +3,7 @@
 # transforms KEYWORDS.TEXT to shortname lsid mapping
 #
 # usage:
-#    cat KEYWORDS.TEXT | ./lsid4keyword.sh 
+#    cat KEYWORDS.TEXT | ./bin/lsid4keyword.sh 
 #
 #
 # example input:
