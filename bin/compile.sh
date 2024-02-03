@@ -7,7 +7,7 @@ set -xe
 
 bin=$(dirname $0)
 
-dist="${bin}/../tsv"
+dist="${bin}/../dist"
 
 mkdir -p "${dist}"
 
@@ -33,4 +33,8 @@ bin/localities.sh\
 
 bin/keywords.sh\
  | collect-and-sample "keywords"
+
+find dist/*.tsv -type f\
+  | sed 's/\.tsv$//g'\
+  | parallel "mlr --itsvlite --ocsv <{1}.tsv >{1}.csv"
 
