@@ -40,6 +40,9 @@ build_translation_table() {
    | head -n1\
    | preston cat ${PRESTON_OPTS}\
    | "${BIN_DIR}/expandjournal.sh"
+
+  taxodros_pdfs_version\
+   | "${BIN_DIR}/replace-filename-with-content-id.sh"
   
 }
 
