@@ -54,6 +54,6 @@ build_translation_table\
 >&2 echo building translation table... done.
 
 stream_records\
-  | parallel --pipe --line-buffer sed -f "${TRANSLATION_TABLE}"
+  | parallel -j1 --pipe --line-buffer sed -f "${TRANSLATION_TABLE}"
 
 rm "${TRANSLATION_TABLE}"
