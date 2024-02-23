@@ -4,7 +4,7 @@
 #
 # 
 
-set -xe
+#set -xe
 
 write_hash() {
   hash_type=$1
@@ -12,9 +12,10 @@ write_hash() {
    | grep -E "(pdf|PDF)$"\
    | parallel -j1 ${hash_type}sum '{1}'\
    | sed "s/^/echo /g"\
-   | sed "s+[ ][.]/+ >'./+g"\
-   | sed "s+.pdf$+.pdf.${hash_type}'+g"\
-   | sed "s+.PDF$+.PDF.${hash_type}'+g"\
+   | sed "s+[ ][.]/+ > \"./+g"\
+   | sed "s+.pdf$+.pdf.${hash_type}\"+g"\
+   | sed "s+.PDF$+.PDF.${hash_type}\"+g"\
+   | tee hash-cmds.sh\
    | bash
 }
 
