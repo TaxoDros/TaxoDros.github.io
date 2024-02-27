@@ -24,7 +24,7 @@ track_pdfs() {
   local hashtype=${1}
 
    preston track --algo ${hashtype}\
-     --file <(find /var/cache/taxodros/pdf -type f | sed 's/,/%2C/g' | sed 's/&/%26/g' | sed 's/?/%3F/g' | grep -vE "[^/]+[.](md5|sha256)$")
+     --file <(find /var/cache/taxodros/pdf -type f | sed 's/ /%20/g' | sed 's/,/%2C/g' | sed 's/&/%26/g' | sed 's/\?/%3F/g' | grep -vE "[^/]+[.](md5|sha256)$")
 }
 
 track_index() { 

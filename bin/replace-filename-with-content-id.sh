@@ -10,5 +10,8 @@ grep hasVersion\
  | tr -d '<'\
  | tr -d '>'\
  | sed -E 's|^.*pdf/[A-Z]/|urn:lsid:taxodros.uzh.ch:filename:|g'\
+ | sed 's/,/%2C/g'\
+ | sed 's/?/%3F/g'\
+ | sed 's/&/%26/g'\
  | grep -v ^file://
 
