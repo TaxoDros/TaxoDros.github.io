@@ -4,9 +4,8 @@
 #
 #
 
-#TAXODROS_VERSION=hash://md5/3793ab3633d3e94a40d3ab442b6cff7d
-TAXODROS_VERSION=hash://md5/b8c3a1e1acdfaf8e0bb3c69d220709d8
-TAXODROS_PDF_VERSION=hash://md5/4fa9eeed1c8cff2490483a48c718df02
+TAXODROS_VERSION=hash://md5/40c28eb355268787eca4eba676a6fdf6
+TAXODROS_PDF_VERSION=hash://md5/26a67012dde325cf2a3a058cc2f9c1b8
 
 PRESTON_OPTS="--algo md5 --remote https://linker.bio,https://zenodo.org"
 
