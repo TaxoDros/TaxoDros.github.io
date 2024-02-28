@@ -217,19 +217,22 @@ The information below is intended for machines to increase the machine readabili
 ```preston head``` produced the provenance anchor of this version:
 
 ```
-hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19
+hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3
 ```
 
 ```
 preston\
  history\
- --anchor hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19
+ --anchor hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3\
  --remote https://linker.bio,https://softwareheritage.org
 ```
 
 yields 
 
 ```
+<hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/1953f4ef164ae47fb22a8ee8bba1d95fa17463a38432d4e48b9e9cf0f91dadcf> .
+<hash://sha256/1953f4ef164ae47fb22a8ee8bba1d95fa17463a38432d4e48b9e9cf0f91dadcf> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/8c9cb7b31a0a5aec41be569199e3c2aa5f38fff604204914a0cae0a6239e4769> .
+<hash://sha256/8c9cb7b31a0a5aec41be569199e3c2aa5f38fff604204914a0cae0a6239e4769> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19> .
 <hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/dc11cb282d103aa4541c8b406502ab5721bfc41edb662b7b44ef91a76b60dfb8> .
 <hash://sha256/dc11cb282d103aa4541c8b406502ab5721bfc41edb662b7b44ef91a76b60dfb8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/3e41eec4c91598b8a2de96e1d1ed47d271a7560eb6ef350a17bc67cc61255302> .
 <hash://sha256/3e41eec4c91598b8a2de96e1d1ed47d271a7560eb6ef350a17bc67cc61255302> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/ee72b70df451082289193cdd8ff420495b3a24d230880613f9adddc71380fee6> .
@@ -241,7 +244,7 @@ Similarly, in md5 hash space:
 ```preston head --algo md5``` yielded:
 
 ```
-hash://md5/4fa9eeed1c8cff2490483a48c718df02
+hash://md5/26a67012dde325cf2a3a058cc2f9c1b8
 ```
 
 with
@@ -249,7 +252,7 @@ with
 ```
 preston\
  history\
- --anchor hash://md5/4fa9eeed1c8cff2490483a48c718df02\
+ --anchor hash://md5/26a67012dde325cf2a3a058cc2f9c1b8\
  --remote https://linker.bio,https://zenodo.org\
  --algo md5
 ```
@@ -257,6 +260,9 @@ preston\
 produced:
 
 ```
+<hash://md5/26a67012dde325cf2a3a058cc2f9c1b8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/40c28eb355268787eca4eba676a6fdf6> .
+<hash://md5/40c28eb355268787eca4eba676a6fdf6> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/3793ab3633d3e94a40d3ab442b6cff7d> .
+<hash://md5/3793ab3633d3e94a40d3ab442b6cff7d> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/4fa9eeed1c8cff2490483a48c718df02> .
 <hash://md5/4fa9eeed1c8cff2490483a48c718df02> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/b8c3a1e1acdfaf8e0bb3c69d220709d8> .
 <hash://md5/b8c3a1e1acdfaf8e0bb3c69d220709d8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/d68c923002c43271cee07ba172c67b0b> .
 <hash://md5/d68c923002c43271cee07ba172c67b0b> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/1037a9c831005710dc9bf14ee9a2e053> .
