@@ -7,27 +7,26 @@ https://orcid.org/0000-0002-8402-176X
 
 ## Citation
 
-Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.10593902 hash://md5/4fa9eeed1c8cff2490483a48c718df02 hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19 
+Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.10593902 hash://md5/26a67012dde325cf2a3a058cc2f9c1b8 hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3 
 
-This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January 2024.
+This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January/February 2024.
 
 ## Index Files 
 
- filename | description (click for details) | signature 
- --- | --- | ---
- [ALLORTE.TEXT](ALLORTE.TEXT) | [location information](#allortetext) | hash://md5/77e26a0a38a282bb551a90e49c09693c
- [ASHBURN.TEXT](ASHBURN.TEXT) | [journal names](#ashburntext) | hash://md5/dfb792282c3df43a4a4d3075b126087f
- [DROS3.TEXT](DROS3.TEXT) | [reference descriptors](#dros3text) | hash://md5/b7c2dc6accc3f41fa7eb4b37784d0dab
- [DROS5.TEXT](DROS5.TEXT) | [reference details](#dros5text) | hash://md5/e83039fdbc676f9c9e915e08b0c8c2f1
- [KEYWORDS.TEXT](KEYWORDS.TEXT) | [descriptors and country names](#keywordstext) | hash://md5/21884e43a0cc0728badd1b259e2f0191
- [README.md](README.md) | this file |
- [SPECIES-LIST_GE_SG](SPECIES-LIST_GE_SG) | [all Drosophilid-epithets (species, infra-specific names, such as "melanogaster")](#species-list_ge_sg), including the respective genus and  subgenus name | hash://md5/21884e43a0cc0728badd1b259e2f0191
- [SPECIES-LIST_GR_SR](SPECIES-LIST_GR_SR) | [(species-)groups and subgroups](#species-list_gr_sr) | hash://md5/0a9ebec3f9e7232de32984968323b0c2
- [SPECIES-LIST_GR_SR_SC](SPECIES-LIST_GR_SR_SC) |  [(species-)group, subgroup and species-complex](#species-list_gr_sr_sc) | hash://md5/f0f08d3680b7c2aedede94af3ae17b52
- [SYST.QE.TEXT](SYST.QE.TEXT) |  [copy of the SYST.TEXT as a mere text-file without header](#systqetext) | hash://md5/f0f08d3680b7c2aedede94af3ae17b52
- [SYST.TEXT](SYST.TEXT) |  [all systematic relationships, including synonymy](#systtext) | hash://md5/0ce19aa18040c8ea36b1a4e9ff29e376
- [TAXA_LIST](TAXA_LIST) | [all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference](#taxalist) | hash://md5/0ce19aa18040c8ea36b1a4e9ff29e376
-
+| filename | description (click for details) | signature |
+| --- | --- | --- |
+| ALLORTE.TEXT | location information | hash://md5/77e26a0a38a282bb551a90e49c09693c |
+| ASHBURN.TEXT | journal names | hash://md5/dfb792282c3df43a4a4d3075b126087f |
+| DROS3.TEXT | reference descriptors | hash://md5/b5e2b6c6de1dc02a5c60563008a04aec |
+| DROS5.TEXT | reference details | hash://md5/ff86b940567d278e50fa00672cf96629 |
+| KEYWORDS.TEXT | descriptors and country names | hash://md5/21884e43a0cc0728badd1b259e2f0191 |
+| README.md | this file |   |
+| SPECIES-LIST_GE_SG | all Drosophilid-epithets (species, infra-specific names, such as “melanogaster”), including the respective genus and subgenus name | hash://md5/be40d900cf2651cb84e0c1efeca04078 |
+| SPECIES-LIST_GR_SR | (species-)groups and subgroups | hash://md5/0a9ebec3f9e7232de32984968323b0c2 |
+| SPECIES-LIST_GR_SR_SC | (species-)group, subgroup and species-complex | hash://md5/f0f08d3680b7c2aedede94af3ae17b52 |
+| SYST.QE.TEXT | copy of the SYST.TEXT as a mere text-file without header | hash://md5/15f77599972d23183c85228c45737e52 |
+| SYST.TEXT | all systematic relationships, including synonymy | hash://md5/5f4f55df4ba69a2c4c251b5c3f4166dc |
+| TAXA_LIST | all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference | hash://md5/39c8a83fb25463d18976c48d2ac0bf49 |
 
 ## PDF Files
 
