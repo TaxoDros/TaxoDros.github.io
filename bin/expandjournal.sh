@@ -12,4 +12,5 @@
  | sed -E 's/\*s[ ]+//g'\
  | sed -E 's/[ ]+\*u[ ]+/\t/g'\
  | sed -E 's/[ ]*$//g'\
+ | grep -vP 'Arthropoda\tArthropoda'\
  | grep -E '[\t]+'\
