@@ -3,8 +3,8 @@
 Compiled by:
 Gerhard Bächli 
 Universität Zürich-Irchel, Institut für Evolutionsbiologie und Umweltforschung, Zürich, Switzerland.
-https://orcid.org/0000-0002-8402-176X
-
+https://orcid.org/0000-0002-8402-176X   
+covers: Asteiidae Aulacigastridae Camillidae Cryptochaetidae Curtonotidae Diastatidae Periscelididae Xenasteiidae Drosophilidae   
 ## Citation
 
 Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.10593902 hash://md5/26a67012dde325cf2a3a058cc2f9c1b8 hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3 
