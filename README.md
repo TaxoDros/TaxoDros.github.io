@@ -193,6 +193,9 @@ This text-file lists all “short names” with actual genus affiliation and aut
 The link [https://www.taxodros.uzh.ch](https://www.taxodros.uzh.ch) allows search with keywords, search for distribution and contains lists for taxonomic overviews.
 
 
+
+
+
 ## References 
 
 ### Elliott2020 
@@ -208,7 +211,40 @@ This section details the provenance of the TaxoDros index files and associated p
 
 ### for humans
 
-The TaxoDros index files and associated pdfs where provided by Gerhard Bächlin January 2024. Following, the index files and associated pdf files were packaged, signed, and versioned using Preston ([Elliott et al. 2020](#elliott2020), [Elliott et al. 2023](#elliott2023)).
+The TaxoDros index files and associated pdfs where provided by Gerhard Bächlin January 2024. Following, the index files and associated pdf files were packaged, signed, and versioned using Preston ([Elliott et al. 2020](#elliott2020), [Elliott et al. 2023](#elliott2023)). 
+
+The TaxoDros index files (e.g., DROS5.TEXT, DROS3.TEXT) were versioned and packaged using a workflow outlined in the [bin/package.sh](bin/package.sh) script.
+
+This versioning workflow has the following steps:
+
+1. list all TaxoDros index files and their pdf file associates.
+2. track (or version) these files using [Preston](https://github.com/bio-guoda/preston)
+
+Now, with this, a TaxoDros version is created. 
+
+Following, Preston can be used to deposit the records, and their associated pdf files, in Zenodo.
+
+This publication workflow continues after step 2. of previous steps and includes:
+
+3. translating (or transforming) TaxoDros index files to line-json using the ```preston stream-taxodros``` command. 
+4. annotating the line-json with references to their associated pdf content (see e.g., [bin/translate-terms.sh](bin/translate-terms.sh)
+5. attempt to publish the resulting annotated records using the ```preston zenodo``` command (see e.g., https://github.com/bio-guoda/preston/releases/tag/0.8.2)
+
+Steps 1-5 can be summarized in the pseudo-code below:
+
+```bash
+# create a TaxoDros corpus version (see also bin/package.sh)
+ls -1\
+ | preston track\
+ | preston taxodros-stream
+
+
+# link and deposit a versioned TaxoDros corpus into Zenodo
+./bin/translate-terms\
+ | preston zenodo --endpoint https://sandbox.zenodo.org --access-token "[add token]"
+```
+
+where ```preston track``` tracks an versioned the listed content in ```ls -1```, ```preston taxodros-stream``` translates TaxoDros index files into line-json, ```./bin/translate-terms``` links the associated pdfs and expands the journal titles.
 
 ## for machines
 
