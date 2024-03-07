@@ -234,8 +234,7 @@ Steps 1-5 can be summarized in the pseudo-code below:
 
 ```bash
 # create a TaxoDros corpus version (see also bin/package.sh)
-ls -1\
- | preston track\
+preston track -f <(ls -1)\
  | preston taxodros-stream
 
 
