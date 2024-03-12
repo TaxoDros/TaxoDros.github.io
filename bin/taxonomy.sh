@@ -9,7 +9,7 @@ set -xe
 BIN_DIR=$(dirname $0)
 PRESTON_OPTS="--algo md5 --remote https://linker.bio,https://zenodo.org"
 
-source "$(dirname $0)/taxodros-version.sh"
+source "$(dirname $0)/version.sh"
 
 stream_records() {
   taxodros_index_version\

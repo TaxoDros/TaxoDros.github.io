@@ -8,7 +8,7 @@
 #
 # 
 
-source "$(dirname $0)/taxodros-version.sh"
+source "$(dirname $0)/version.sh"
 
 stream_records() {
   taxodros_index_version\
