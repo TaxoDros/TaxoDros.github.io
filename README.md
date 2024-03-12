@@ -232,18 +232,16 @@ This publication workflow continues after step 2. of previous steps and includes
 
 Steps 1-5 can be summarized in the pseudo-code below:
 
-```bash
-# create a TaxoDros corpus version (see also bin/package.sh)
-preston track -f <(ls -1)\
- | preston taxodros-stream
+If a new version of TaxoDros is needed, run [bin/package.sh](bin/package.sh) to create a TaxoDros corpus version.
 
+Link, stream and deposit a versioned TaxoDros corpus into Zenodo by running [bin/stream.sh](bin/stream.sh) using:
 
-# link and deposit a versioned TaxoDros corpus into Zenodo
-./bin/translate-terms\
+```
+bin/stream.sh\
  | preston zenodo --endpoint https://sandbox.zenodo.org --access-token "[add token]"
 ```
 
-where ```preston track``` tracks an versioned the listed content in ```ls -1```, ```preston taxodros-stream``` translates TaxoDros index files into line-json, ```./bin/translate-terms``` links the associated pdfs and expands the journal titles.
+In the package.sh and stream.sh workflow scripts, you'll find Preston comments alike: ```preston track``` for tracking an versioned the listed content in ```ls -1```, ```preston taxodros-stream``` translates TaxoDros index files into line-json.
 
 ## for machines
 
