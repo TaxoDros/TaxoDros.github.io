@@ -11,6 +11,8 @@ Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. 
 
 This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January/February 2024.
 
+TaxoDros forms the basis of the [Zenodo TaxoDros Community](https://zenodo.org/communities/taxodros). See also [https://zenodo.org/communities/taxodros/about](https://zenodo.org/communities/taxodros/about) .   
+
 ## Index Files 
 
 | filename | description (click for details) | signature |
