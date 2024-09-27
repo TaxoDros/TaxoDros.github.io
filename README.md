@@ -7,9 +7,9 @@ https://orcid.org/0000-0002-8402-176X
 covers: Asteiidae Aulacigastridae Camillidae Cryptochaetidae Curtonotidae Diastatidae Periscelididae Xenasteiidae Drosophilidae   
 ## Citation
 
-Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/1. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.10593902 hash://md5/26a67012dde325cf2a3a058cc2f9c1b8 hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3 
+Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/9. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.13841002 hash://md5/b3ead19ea211a66e4f59a6842e097c7b hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16  
 
-This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January/February 2024.
+This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in August/September 2024.
 
 TaxoDros forms the basis of the [Zenodo TaxoDros Community](https://zenodo.org/communities/taxodros). See also [https://zenodo.org/communities/taxodros/about](https://zenodo.org/communities/taxodros/about) .   
 
@@ -17,18 +17,18 @@ TaxoDros forms the basis of the [Zenodo TaxoDros Community](https://zenodo.org/c
 
 | filename | description (click for details) | signature |
 | --- | --- | --- |
-| ALLORTE.TEXT | location information | hash://md5/77e26a0a38a282bb551a90e49c09693c |
-| ASHBURN.TEXT | journal names | hash://md5/dfb792282c3df43a4a4d3075b126087f |
-| DROS3.TEXT | reference descriptors | hash://md5/b5e2b6c6de1dc02a5c60563008a04aec |
-| DROS5.TEXT | reference details | hash://md5/ff86b940567d278e50fa00672cf96629 |
-| KEYWORDS.TEXT | descriptors and country names | hash://md5/21884e43a0cc0728badd1b259e2f0191 |
+| ALLORTE.TEXT | location information | hash://md5/9f31fe295591c47b7d82e9871fa0db85 |
+| ASHBURN.TEXT | journal names | hash://md5/225fa584ea602b27de1bcf9ac7edcf68 |
+| DROS3.TEXT | reference descriptors | hash://md5/9ae8095ab8fee928b4d0b78fbf937ba0 |
+| DROS5.TEXT | reference details | hash://md5/1e07c7a2567d0431f94e799f5e3db252 |
+| KEYWORDS.TEXT | descriptors and country names | hash://md5/a115d0559dfd3ea75b758fee71246775 |
 | README.md | this file |   |
 | SPECIES-LIST_GE_SG | all Drosophilid-epithets (species, infra-specific names, such as “melanogaster”), including the respective genus and subgenus name | hash://md5/be40d900cf2651cb84e0c1efeca04078 |
 | SPECIES-LIST_GR_SR | (species-)groups and subgroups | hash://md5/0a9ebec3f9e7232de32984968323b0c2 |
 | SPECIES-LIST_GR_SR_SC | (species-)group, subgroup and species-complex | hash://md5/f0f08d3680b7c2aedede94af3ae17b52 |
-| SYST.QE.TEXT | copy of the SYST.TEXT as a mere text-file without header | hash://md5/15f77599972d23183c85228c45737e52 |
+| SYST.QE.TEXT | copy of the SYST.TEXT as a mere text-file without header | hash://md5/4609142e8ed4994c673316c280e20af5 |
 | SYST.TEXT | all systematic relationships, including synonymy | hash://md5/5f4f55df4ba69a2c4c251b5c3f4166dc |
-| TAXA_LIST | all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference | hash://md5/39c8a83fb25463d18976c48d2ac0bf49 |
+| TAXA_LIST | all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference | hash://md5/0ef01d88281c8a0adff9a974a2087338 |
 
 ## PDF Files
 
@@ -36,6 +36,7 @@ TaxoDros keeps a library of associated pdfs. See [pdf](pdf/) for more informatio
 
 ### History 
 Version 20240112: Added DOI to .K in DROS5.TEXT and SYST.QE.TEXT
+Version 20240926: Scheduled update of index files with new/updated pdfs.
 
 ## Index File Details
 
@@ -221,18 +222,15 @@ This versioning workflow has the following steps:
 
 1. list all TaxoDros index files and their pdf file associates.
 2. track (or version) these files using [Preston](https://github.com/bio-guoda/preston)
-
-Now, with this, a TaxoDros version is created. 
-
-Following, Preston can be used to deposit the records, and their associated pdf files, in Zenodo.
-
-This publication workflow continues after step 2. of previous steps and includes:
-
 3. translating (or transforming) TaxoDros index files to line-json using the ```preston stream-taxodros``` command. 
 4. annotating the line-json with references to their associated pdf content (see e.g., [bin/translate-terms.sh](bin/translate-terms.sh)
 5. attempt to publish the resulting annotated records using the ```preston zenodo``` command (see e.g., https://github.com/bio-guoda/preston/releases/tag/0.8.2)
 
-Steps 1-5 can be summarized in the pseudo-code below:
+With steps 1-2, a TaxoDros version is created. 
+
+Following, Preston can be used to deposit the records, and their associated pdf files, in Zenodo.
+
+This publication workflow continues after step 2.
 
 If a new version of TaxoDros is needed, run [bin/package.sh](bin/package.sh) to create a TaxoDros corpus version.
 
@@ -252,19 +250,21 @@ The information below is intended for machines to increase the machine readabili
 ```preston head``` produced the provenance anchor of this version:
 
 ```
-hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3
+hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16
 ```
 
 ```
 preston\
  history\
- --anchor hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3\
+ --anchor hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16\
  --remote https://linker.bio,https://softwareheritage.org
 ```
 
 yields 
 
 ```
+<hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/8de04aee9df5564648414dfe7d6a2fd147c26f211ceda439ccc79468aedae44a> .
+<hash://sha256/8de04aee9df5564648414dfe7d6a2fd147c26f211ceda439ccc79468aedae44a> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3> .
 <hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/1953f4ef164ae47fb22a8ee8bba1d95fa17463a38432d4e48b9e9cf0f91dadcf> .
 <hash://sha256/1953f4ef164ae47fb22a8ee8bba1d95fa17463a38432d4e48b9e9cf0f91dadcf> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/8c9cb7b31a0a5aec41be569199e3c2aa5f38fff604204914a0cae0a6239e4769> .
 <hash://sha256/8c9cb7b31a0a5aec41be569199e3c2aa5f38fff604204914a0cae0a6239e4769> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/e05466f33c755f11bd1c2fa30eef2388bf24ff7989931bae1426daff0200af19> .
@@ -279,7 +279,7 @@ Similarly, in md5 hash space:
 ```preston head --algo md5``` yielded:
 
 ```
-hash://md5/26a67012dde325cf2a3a058cc2f9c1b8
+hash://md5/b3ead19ea211a66e4f59a6842e097c7b
 ```
 
 with
@@ -287,7 +287,7 @@ with
 ```
 preston\
  history\
- --anchor hash://md5/26a67012dde325cf2a3a058cc2f9c1b8\
+ --anchor hash://md5/b3ead19ea211a66e4f59a6842e097c7b\
  --remote https://linker.bio,https://zenodo.org\
  --algo md5
 ```
@@ -295,6 +295,8 @@ preston\
 produced:
 
 ```
+<hash://md5/b3ead19ea211a66e4f59a6842e097c7b> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/b2c36e8284ac51b7a65dfc97c0ef0f74> .
+<hash://md5/b2c36e8284ac51b7a65dfc97c0ef0f74> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/26a67012dde325cf2a3a058cc2f9c1b8> .
 <hash://md5/26a67012dde325cf2a3a058cc2f9c1b8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/40c28eb355268787eca4eba676a6fdf6> .
 <hash://md5/40c28eb355268787eca4eba676a6fdf6> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/3793ab3633d3e94a40d3ab442b6cff7d> .
 <hash://md5/3793ab3633d3e94a40d3ab442b6cff7d> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/4fa9eeed1c8cff2490483a48c718df02> .
