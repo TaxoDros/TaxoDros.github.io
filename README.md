@@ -1,5 +1,11 @@
 # TaxoDros - The Database on Taxonomy of Drosophilidae
 
+<form class="searchbox" action="https://zenodo.org/communities/taxodros">
+  <input type="search" id="name" name="q" placeholder="Search TaxoDros..."/>
+  <button type="submit">Search</button> 
+</form>
+
+
 Compiled by:
 Gerhard Bächli 
 Universität Zürich-Irchel, Institut für Evolutionsbiologie und Umweltforschung, Zürich, Switzerland.
