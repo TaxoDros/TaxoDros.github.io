@@ -1,9 +1,12 @@
 # TaxoDros - The Database on Taxonomy of Drosophilidae
 
+[edit page](https://github.com/taxodros/taxodros.github.io/edit/main/README.md) / [share feedback](https://github.com/taxodros/taxodros.github.io/issues/new)
+
 <form class="searchbox" action="https://zenodo.org/communities/taxodros">
   <input type="search" id="name" name="q" placeholder="Search TaxoDros..."/>
   <button type="submit">Search</button> 
 </form>
+<a href="https://zenodo.org/help/search">Search guide</a>
 
 
 Compiled by:
