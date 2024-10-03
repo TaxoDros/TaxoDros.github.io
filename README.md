@@ -3,7 +3,7 @@
 [edit page](https://github.com/taxodros/taxodros.github.io/edit/main/README.md) / [share feedback](https://github.com/taxodros/taxodros.github.io/issues/new)
 
 <form class="searchbox" action="https://zenodo.org/communities/taxodros">
-  <input type="search" id="name" name="q" placeholder="Search TaxoDros..."/>
+  <input type="search" id="name" name="q" placeholder="Search TaxoDros..." value="&quot;Spotted Wing Drosophila&quot;"/>
   <button type="submit">Search</button> 
 </form>
 <a href="https://zenodo.org/help/search">Search guide</a>
