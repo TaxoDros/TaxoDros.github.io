@@ -16,7 +16,7 @@ https://orcid.org/0000-0002-8402-176X
 covers: Asteiidae Aulacigastridae Camillidae Cryptochaetidae Curtonotidae Diastatidae Periscelididae Xenasteiidae Drosophilidae   
 ## Citation
 
-Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/9. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.13841002 hash://md5/b3ead19ea211a66e4f59a6842e097c7b hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16  
+Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/9. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.13841002 hash://md5/c6ca8257965cccb206b90b022a9446e8 hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210  
 
 This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in August/September 2024.
 
@@ -35,8 +35,8 @@ TaxoDros forms the basis of the [Zenodo TaxoDros Community](https://zenodo.org/c
 | SPECIES-LIST_GE_SG | all Drosophilid-epithets (species, infra-specific names, such as “melanogaster”), including the respective genus and subgenus name | hash://md5/be40d900cf2651cb84e0c1efeca04078 |
 | SPECIES-LIST_GR_SR | (species-)groups and subgroups | hash://md5/0a9ebec3f9e7232de32984968323b0c2 |
 | SPECIES-LIST_GR_SR_SC | (species-)group, subgroup and species-complex | hash://md5/f0f08d3680b7c2aedede94af3ae17b52 |
-| SYST.QE.TEXT | copy of the SYST.TEXT as a mere text-file without header | hash://md5/4609142e8ed4994c673316c280e20af5 |
-| SYST.TEXT | all systematic relationships, including synonymy | hash://md5/5f4f55df4ba69a2c4c251b5c3f4166dc |
+| SYST.QE.TEXT | copy of the SYST.TEXT as a mere text-file without header | hash://md5/3fb637e9bb67a021a8dff8c06888fa0a |
+| SYST.TEXT | all systematic relationships, including synonymy | hash://md5/4609142e8ed4994c673316c280e20af5 |
 | TAXA_LIST | all taxa (as abbreviation), for species with the currently accepted genus name, and the actual bibliographic reference | hash://md5/0ef01d88281c8a0adff9a974a2087338 |
 
 ## PDF Files
@@ -46,6 +46,7 @@ TaxoDros keeps a library of associated pdfs. See [pdf](pdf/) for more informatio
 ### History 
 Version 20240112: Added DOI to .K in DROS5.TEXT and SYST.QE.TEXT
 Version 20240926: Scheduled update of index files with new/updated pdfs.
+Version 20250120: Scheduled update of index files with new/updated pdfs.
 
 ## Index File Details
 
@@ -232,7 +233,7 @@ This versioning workflow has the following steps:
 1. list all TaxoDros index files and their pdf file associates.
 2. track (or version) these files using [Preston](https://github.com/bio-guoda/preston)
 3. translating (or transforming) TaxoDros index files to line-json using the ```preston stream-taxodros``` command. 
-4. annotating the line-json with references to their associated pdf content (see e.g., [bin/translate-terms.sh](bin/translate-terms.sh)
+4. annotating the line-json with references to their associated pdf content (see e.g., [bin/translate-terms.sh](bin/translate-terms.sh))
 5. attempt to publish the resulting annotated records using the ```preston zenodo``` command (see e.g., https://github.com/bio-guoda/preston/releases/tag/0.8.2)
 
 With steps 1-2, a TaxoDros version is created. 
@@ -259,19 +260,21 @@ The information below is intended for machines to increase the machine readabili
 ```preston head``` produced the provenance anchor of this version:
 
 ```
-hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16
+hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210
 ```
 
 ```
 preston\
  history\
- --anchor hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16\
+ --anchor hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210\
  --remote https://linker.bio,https://softwareheritage.org
 ```
 
 yields 
 
 ```
+<hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/180cab17146ba1cde9edc58a712ed5d235629a40bb88b73ebfa59a041485c351> .
+<hash://sha256/180cab17146ba1cde9edc58a712ed5d235629a40bb88b73ebfa59a041485c351> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16> .
 <hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/8de04aee9df5564648414dfe7d6a2fd147c26f211ceda439ccc79468aedae44a> .
 <hash://sha256/8de04aee9df5564648414dfe7d6a2fd147c26f211ceda439ccc79468aedae44a> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3> .
 <hash://sha256/ca86d74b318a334bddbc7c6a387a09530a083b8617718f5369ad548744c602d3> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/1953f4ef164ae47fb22a8ee8bba1d95fa17463a38432d4e48b9e9cf0f91dadcf> .
@@ -288,7 +291,7 @@ Similarly, in md5 hash space:
 ```preston head --algo md5``` yielded:
 
 ```
-hash://md5/b3ead19ea211a66e4f59a6842e097c7b
+hash://md5/c6ca8257965cccb206b90b022a9446e8
 ```
 
 with
@@ -296,7 +299,7 @@ with
 ```
 preston\
  history\
- --anchor hash://md5/b3ead19ea211a66e4f59a6842e097c7b\
+ --anchor hash://md5/c6ca8257965cccb206b90b022a9446e8\
  --remote https://linker.bio,https://zenodo.org\
  --algo md5
 ```
@@ -304,6 +307,8 @@ preston\
 produced:
 
 ```
+<hash://md5/c6ca8257965cccb206b90b022a9446e8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/47cda0f604fec63aa3df1f9a21251481> .
+<hash://md5/47cda0f604fec63aa3df1f9a21251481> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/b3ead19ea211a66e4f59a6842e097c7b> .
 <hash://md5/b3ead19ea211a66e4f59a6842e097c7b> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/b2c36e8284ac51b7a65dfc97c0ef0f74> .
 <hash://md5/b2c36e8284ac51b7a65dfc97c0ef0f74> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/26a67012dde325cf2a3a058cc2f9c1b8> .
 <hash://md5/26a67012dde325cf2a3a058cc2f9c1b8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/40c28eb355268787eca4eba676a6fdf6> .
