@@ -16,9 +16,9 @@ https://orcid.org/0000-0002-8402-176X
 covers: Asteiidae Aulacigastridae Camillidae Cryptochaetidae Curtonotidae Diastatidae Periscelididae Xenasteiidae Drosophilidae   
 ## Citation
 
-Bächli, G. (2024) TaxoDros: The Database on Taxonomy of Drosophilidae. 2024/9. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.13841002 hash://md5/c6ca8257965cccb206b90b022a9446e8 hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210  
+Bächli, G. (2025) TaxoDros: The Database on Taxonomy of Drosophilidae. 2025/01. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.14721993 hash://md5/c6ca8257965cccb206b90b022a9446e8 hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210  
 
-This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in August/September 2024.
+This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January 2025.
 
 TaxoDros forms the basis of the [Zenodo TaxoDros Community](https://zenodo.org/communities/taxodros). See also [https://zenodo.org/communities/taxodros/about](https://zenodo.org/communities/taxodros/about) .   
 
