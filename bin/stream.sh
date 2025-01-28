@@ -109,7 +109,12 @@ set -xe
 STREAM_TYPES=${1:-DROS3|DROS5|SYST}
 BIN_DIR=$(dirname $0)
 TRANSLATION_TABLE=$(mktemp)
-PRESTON_OPTS="--algo md5 --remote https://linker.bio,https://zenodo.org"
+PRESTON_OPTS="--algo md5 --remote https://linker.bio,https://zenodo.org --pub-year ${TAXODROS_YEAR} --pub-sha256 ${TAXODROS_PDF_SHA256_VERSION} --pub-md5 ${TAXODROS_PDF_MD5_VERSION} --pub-doi ${TAXODROS_DOI}"
+
+TAXODROS_PDF_MD5_VERSION=${TAXODROS_PDF_VERSION_MD5_2025_01}
+TAXODROS_PDF_SHA256_VERSION=${TAXODROS_PDF_VERSION_SHA256_2025_01}
+TAXODROS_YEAR
+
 
 source "$(dirname $0)/version.sh"
 
