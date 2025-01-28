@@ -111,13 +111,14 @@ BIN_DIR=$(dirname $0)
 TRANSLATION_TABLE=$(mktemp)
 source "$(dirname $0)/version.sh"
 
-PRESTON_OPTS="--algo md5 --remote https://linker.bio,https://zenodo.org --pub-year ${TAXODROS_YEAR} --pub-sha256 ${TAXODROS_PDF_SHA256_VERSION} --pub-md5 ${TAXODROS_PDF_MD5_VERSION} --pub-doi ${TAXODROS_DOI}"
+PRESTON_OPTS="--algo md5 --remote https://linker.bio,https://zenodo.org"
+PRESTON_STREAM_OPTS="--algo md5 --remote https://linker.bio,https://zenodo.org --pub-year ${TAXODROS_YEAR} --pub-sha256 ${TAXODROS_PDF_SHA256_VERSION} --pub-md5 ${TAXODROS_PDF_MD5_VERSION} --pub-doi ${TAXODROS_DOI}"
 
 stream_records() {
   taxodros_index_version\
    | grep hasVersion\
    | grep -E "(${STREAM_TYPES})[.]TEXT"\
-   | preston taxodros-stream ${PRESTON_OPTS}
+   | preston taxodros-stream ${PRESTON_STREAM_OPTS}
 }
 
 build_translation_table() {
