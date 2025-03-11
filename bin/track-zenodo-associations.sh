@@ -11,7 +11,6 @@ preston track --data-dir "${DATA_DIR}"\
  --algo md5\
  -f <(preston cat --data-dir "${SCRIPT_DIR}/../data" ${TAXODROS_VERSION}\
  | grep -oE "hash://md5/[a-f0-9]{32}"\
- | head\
  | xargs -I{} echo "https://zenodo.org/api/communities/taxodros/records?q=%22{}%22&l=list&limit=1")
 
 preston head --data-dir "${DATA_DIR}" --algo md5\
