@@ -8,7 +8,6 @@
 </form>
 <a href="https://zenodo.org/help/search">Search guide</a>
 
-List of TaxoDros references available on Zenodo can be found at: [refs.csv](./refs.csv) ([first 100](./refs-100.csv)) / [refs.tsv](./refs.tsv) ([first 100](./refs-100.tsv)).
 
 
 Compiled by:
@@ -23,6 +22,8 @@ Bächli, G. (2025) TaxoDros: The Database on Taxonomy of Drosophilidae. 2025/01.
 This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January 2025.
 
 TaxoDros forms the basis of the [Zenodo TaxoDros Community](https://zenodo.org/communities/taxodros). See also [https://zenodo.org/communities/taxodros/about](https://zenodo.org/communities/taxodros/about) .   
+
+A list of TaxoDros references available on Zenodo can be found at: [refs.csv](./refs.csv) ([first 100](./refs-100.csv)) / [refs.tsv](./refs.tsv) ([first 100](./refs-100.tsv)).
 
 ## Index Files 
 
