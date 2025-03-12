@@ -11,4 +11,4 @@ preston cat --data-dir "${DATA_DIR}" ${VERSION}\
  | grep hasVersion\
  | preston cat --data-dir "${DATA_DIR}"\
  | jq '.hits.hits[] | select(.metadata.alternate_identifiers[0].identifier != null) | { "authors": (.metadata.creators | map(.name) | join(" | ")), "year": .metadata.publication_date, "title": .metadata.title, "journal": (.metadata.journal.title // ""), "publication_type": (.metadata.resource_type.title // ""), "volume": (.metadata.journal.volume // ""),"issue": (.metadata.journal.issue // ""), "pages": (.metadata.journal.pages // ""), "doi": (.links.doi // ""), "id": .metadata.alternate_identifiers[0].identifier, "contentId": .metadata.alternate_identifiers[1].identifier, "zenodoResponseCorpusId": env.VERSION}'\
- | mlr --ijsonl --ocsv cat
+ | mlr --ijsonl --ocsv cat then uniq -a
