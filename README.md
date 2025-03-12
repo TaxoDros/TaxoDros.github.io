@@ -8,6 +8,8 @@
 </form>
 <a href="https://zenodo.org/help/search">Search guide</a>
 
+List of TaxoDros references available on Zenodo can be found at: [refs.csv](./refs.csv) ([first 100](./refs-100.csv)) / [refs.tsv](./refs.tsv) ([first 100](./refs-100.tsv)).
+
 
 Compiled by:
 Gerhard Bächli 
