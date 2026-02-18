@@ -31,9 +31,9 @@ A list of TaxoDros references available on Zenodo can be found at: [refs.csv](./
 | --- | --- | --- |
 | ALLORTE.TEXT | location information | hash://md5/9f31fe295591c47b7d82e9871fa0db85 |
 | ASHBURN.TEXT | journal names | hash://md5/225fa584ea602b27de1bcf9ac7edcf68 |
-| DROS3.TEXT | reference descriptors | hash://md5/9ae8095ab8fee928b4d0b78fbf937ba0 |
-| DROS5.TEXT | reference details | hash://md5/1e07c7a2567d0431f94e799f5e3db252 |
-| KEYWORDS.TEXT | descriptors and country names | hash://md5/a115d0559dfd3ea75b758fee71246775 |
+| DROS3.TEXT | reference descriptors | hash://md5/970b1b143428d675aa38710682be7772 |
+| DROS5.TEXT | reference details | hash://md5/3b890c93ae2093ccaa5f5c3395494deb |
+| KEYWORDS.TEXT | descriptors and country names | hash://md5/21884e43a0cc0728badd1b259e2f0191 |
 | README.md | this file |   |
 | SPECIES-LIST_GE_SG | all Drosophilid-epithets (species, infra-specific names, such as “melanogaster”), including the respective genus and subgenus name | hash://md5/be40d900cf2651cb84e0c1efeca04078 |
 | SPECIES-LIST_GR_SR | (species-)groups and subgroups | hash://md5/0a9ebec3f9e7232de32984968323b0c2 |
@@ -50,6 +50,8 @@ TaxoDros keeps a library of associated pdfs. See [pdf](pdf/) for more informatio
 Version 20240112: Added DOI to .K in DROS5.TEXT and SYST.QE.TEXT
 Version 20240926: Scheduled update of index files with new/updated pdfs.
 Version 20250120: Scheduled update of index files with new/updated pdfs.
+Version 20250730: Scheduled update of index files with new/updated pdfs.
+Version 20260215: Scheduled update of index files with new/updated pdfs.
 
 ## Index File Details
 
