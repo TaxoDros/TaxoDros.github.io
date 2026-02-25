@@ -13,13 +13,14 @@
 Compiled by:
 Gerhard Bächli 
 Universität Zürich-Irchel, Institut für Evolutionsbiologie und Umweltforschung, Zürich, Switzerland.
-https://orcid.org/0000-0002-8402-176X   
+[https://orcid.org/0000-0002-8402-176X](https://orcid.org/0000-0002-8402-176X)  
+
 covers: Asteiidae Aulacigastridae Camillidae Cryptochaetidae Curtonotidae Diastatidae Periscelididae Xenasteiidae Drosophilidae   
 ## Citation
 
-Bächli, G. (2025) TaxoDros: The Database on Taxonomy of Drosophilidae. 2025/01. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). https://doi.org/10.5281/zenodo.14721993 hash://md5/c6ca8257965cccb206b90b022a9446e8 hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210  
+Bächli, G. (2026) TaxoDros: The Database on Taxonomy of Drosophilidae. 2026/01. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). [https://doi.org/10.5281/zenodo.18764503](https://doi.org/10.5281/zenodo.18764503) hash://md5/c6ca8257965cccb206b90b022a9446e8 hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210  
 
-This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January 2025.
+This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January 2026.
 
 TaxoDros forms the basis of the [Zenodo TaxoDros Community](https://zenodo.org/communities/taxodros). See also [https://zenodo.org/communities/taxodros/about](https://zenodo.org/communities/taxodros/about) .   
 
@@ -265,19 +266,23 @@ The information below is intended for machines to increase the machine readabili
 ```preston head``` produced the provenance anchor of this version:
 
 ```
-hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210
+hash://sha256/612ecde6ac7582b643a56b6ca5648c92cb122fcdf99e68c4bb0f64e9c56b5c76
 ```
 
 ```
-preston\
- history\
- --anchor hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210\
+preston \
+ history \
+ --anchor hash://sha256/612ecde6ac7582b643a56b6ca5648c92cb122fcdf99e68c4bb0f64e9c56b5c76 \
  --remote https://linker.bio,https://softwareheritage.org
 ```
 
 yields 
 
 ```
+<hash://sha256/612ecde6ac7582b643a56b6ca5648c92cb122fcdf99e68c4bb0f64e9c56b5c76> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/6c498c7b72ef930cf725e34bf962a5f315f3383580b10627ae97d9864bf486ea> .
+<hash://sha256/6c498c7b72ef930cf725e34bf962a5f315f3383580b10627ae97d9864bf486ea> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/7eca495117bca3e49f1e8083cbb57fc3a6a11778ba3256e5cf2a293f92a80906> .
+<hash://sha256/7eca495117bca3e49f1e8083cbb57fc3a6a11778ba3256e5cf2a293f92a80906> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/a8597e894fb2fac3ef1dd85ef56a612bbe1f3618ec2d099866a42b324b5b23f6> .
+<hash://sha256/a8597e894fb2fac3ef1dd85ef56a612bbe1f3618ec2d099866a42b324b5b23f6> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210> .
 <hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/180cab17146ba1cde9edc58a712ed5d235629a40bb88b73ebfa59a041485c351> .
 <hash://sha256/180cab17146ba1cde9edc58a712ed5d235629a40bb88b73ebfa59a041485c351> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16> .
 <hash://sha256/a6e757007c04215cafa537c09a06a0e8a68be70cbc9c965c857c7a9058ceeb16> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://sha256/8de04aee9df5564648414dfe7d6a2fd147c26f211ceda439ccc79468aedae44a> .
@@ -296,7 +301,7 @@ Similarly, in md5 hash space:
 ```preston head --algo md5``` yielded:
 
 ```
-hash://md5/c6ca8257965cccb206b90b022a9446e8
+hash://md5/47cc02b56e5d21384e01ba0b7d3c170d
 ```
 
 with
@@ -304,7 +309,7 @@ with
 ```
 preston\
  history\
- --anchor hash://md5/c6ca8257965cccb206b90b022a9446e8\
+ --anchor hash://md5/47cc02b56e5d21384e01ba0b7d3c170d\
  --remote https://linker.bio,https://zenodo.org\
  --algo md5
 ```
@@ -312,6 +317,10 @@ preston\
 produced:
 
 ```
+<hash://md5/47cc02b56e5d21384e01ba0b7d3c170d> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/959cc3ae2df363c54e81960d2e761192> .
+<hash://md5/959cc3ae2df363c54e81960d2e761192> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/cd40f46f05d32d91a123f3f2f544cd08> .
+<hash://md5/cd40f46f05d32d91a123f3f2f544cd08> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/824a409ec4e8ce3ea8cd1683953d2e85> .
+<hash://md5/824a409ec4e8ce3ea8cd1683953d2e85> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/c6ca8257965cccb206b90b022a9446e8> .
 <hash://md5/c6ca8257965cccb206b90b022a9446e8> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/47cda0f604fec63aa3df1f9a21251481> .
 <hash://md5/47cda0f604fec63aa3df1f9a21251481> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/b3ead19ea211a66e4f59a6842e097c7b> .
 <hash://md5/b3ead19ea211a66e4f59a6842e097c7b> <http://www.w3.org/ns/prov#wasDerivedFrom> <hash://md5/b2c36e8284ac51b7a65dfc97c0ef0f74> .
