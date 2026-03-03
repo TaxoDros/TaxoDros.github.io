@@ -11,7 +11,7 @@ source "${SCRIPT_DIR}/version.sh"
 
 preston track --data-dir "${DATA_DIR}"\
  --algo md5\
- -f <(preston ls --algo md5 --data-dir "${SCRIPT_DIR}/../data" --anchor ${TAXODROS_MD5_PDF_VERSION}\
+ -f <(preston ls --algo md5 --data-dir "${SCRIPT_DIR}/../data" --anchor ${TAXODROS_PDF_MD5_VERSION}\
  | grep hasVersion \
  | grep -iE "[.]PDF>" \
  | grep -Eo "hash://md5/[a-f0-9]{32}" \
