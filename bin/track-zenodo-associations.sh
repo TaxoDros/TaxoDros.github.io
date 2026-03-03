@@ -3,6 +3,8 @@
 # tracks zenodo query associated with known, versioned taxodros pdf content 
 #
 
+set -xe
+
 SCRIPT_DIR=$(dirname $0)
 DATA_DIR="${SCRIPT_DIR}/../zenodo"
 source "${SCRIPT_DIR}/version.sh"
