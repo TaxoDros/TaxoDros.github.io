@@ -15,6 +15,7 @@ preston track --data-dir "${DATA_DIR}"\
  | grep hasVersion \
  | grep -iE "[.]PDF>" \
  | grep -Eo "hash://md5/[a-f0-9]{32}" \
+ | sort | uniq \
  | xargs -I{} echo "https://zenodo.org/api/communities/taxodros/records?q=%22{}%22&l=list&limit=1"
 )
 
