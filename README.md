@@ -18,7 +18,7 @@ Universität Zürich-Irchel, Institut für Evolutionsbiologie und Umweltforschun
 covers: Asteiidae Aulacigastridae Camillidae Cryptochaetidae Curtonotidae Diastatidae Periscelididae Xenasteiidae Drosophilidae   
 ## Citation
 
-Bächli, G. (2026) TaxoDros: The Database on Taxonomy of Drosophilidae. 2026/01. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). [https://doi.org/10.5281/zenodo.18764503](https://doi.org/10.5281/zenodo.18764503) hash://md5/c6ca8257965cccb206b90b022a9446e8 hash://sha256/0185b51272f3cd5ca6af34ee406564c3366211bed461650e28273cc7f27f6210  
+Bächli, G. (2026) TaxoDros: The Database on Taxonomy of Drosophilidae. 2026/01. Also available from: [https://www.taxodros.uzh.ch/](https://www.taxodros.uzh.ch/). [https://doi.org/10.5281/zenodo.18764503](https://doi.org/10.5281/zenodo.18764503) hash://md5/47cc02b56e5d21384e01ba0b7d3c170d hash://sha256/612ecde6ac7582b643a56b6ca5648c92cb122fcdf99e68c4bb0f64e9c56b5c76 
 
 This repository contains the TaxoDros source data for [Taxodros](https://www.taxodros.uzh.ch/): The database on Taxonomy of Drosophilidae as provided by Gerhard Bächli, the database maintainer, in January 2026.
 
