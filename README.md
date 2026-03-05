@@ -48,11 +48,14 @@ A list of TaxoDros references available on Zenodo can be found at: [refs.csv](./
 TaxoDros keeps a library of associated pdfs. See [pdf](pdf/) for more information.
 
 ### History 
-Version 20240112: Added DOI to .K in DROS5.TEXT and SYST.QE.TEXT
-Version 20240926: Scheduled update of index files with new/updated pdfs.
-Version 20250120: Scheduled update of index files with new/updated pdfs.
-Version 20250730: Scheduled update of index files with new/updated pdfs.
-Version 20260215: Scheduled update of index files with new/updated pdfs.
+
+version | description 
+--- | --- 
+Version 20240112 | Added DOI to .K in DROS5.TEXT and SYST.QE.TEXT
+Version 20240926 | Scheduled update of index files with new/updated pdfs.
+Version 20250120 | Scheduled update of index files with new/updated pdfs.
+Version 20250730 | Scheduled update of index files with new/updated pdfs.
+Version 20260215 | Scheduled update of index files with new/updated pdfs.
 
 ## Index File Details
 
